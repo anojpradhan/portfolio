@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "portfolio-lake-phi-lqjrofh9pb.vercel.app"
+        }
+      ],
+      "destination": "https://anojpradhan.com.np/:1",
+      "permanent": true
+    }
+  ]
+}
