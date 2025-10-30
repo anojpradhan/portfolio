@@ -1,6 +1,8 @@
 const projects = [
   { title: "Portfolio Website", description: "My personal portfolio website built with React and Tailwind." },
-  { title: "Todo App", description: "A simple task management app using React." },
+  { title: "Todo App", description: "A simple task management app using React and Nest as backend ." },
+  { title: "LogiTrek", description: "An inventory management system with dashboard to manage products, retailers, customers and organization growth." },
+  { title: "Single-vendor E-commerce", description: "I did backend in laravel for this site with dashboard to create and manage products and deals." },
 ];
 
 const Projects = () => {
