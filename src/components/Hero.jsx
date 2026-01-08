@@ -78,9 +78,6 @@ const Hero = () => {
               <Image />
             </div>
           </div>
-
-          {/* mobile ko divider*/}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 block md:hidden w-16 xs:w-20 h-px bg-gray-700" />
         </div>
       </div>
     </section>
