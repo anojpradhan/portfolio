@@ -43,7 +43,7 @@ const Header = () => {
 
           {/* Resume */}
           <a
-            href="/Newresume.pdf"
+            href="/AnojPradhan.pdf"
             download
             className="flex items-center gap-2 bg-black text-white 
             px-3 py-2 rounded-md text-sm
