@@ -1,16 +1,15 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home";
+import SingleProject from "./pages/SingleProject";
 
-const App =()=>{
-  return(
-    <div className="font-sans bg-gray-50 text-gray-900">
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Contact />
-    </div>
+export default function App() {
+  return (
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:slug" element={<SingleProject />} />
+      </Route>
+    </Routes>
   );
 }
-export default App;
