@@ -1,42 +1,9 @@
-import { useRef, useState } from "react";
 import { Mail, MapPin } from "lucide-react";
-import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const formRef = useRef(null);
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccess("");
-
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        formRef.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          setLoading(false);
-          setSuccess("Message sent successfully!");
-          formRef.current.reset();
-        },
-        (error) => {
-          setLoading(false);
-          setSuccess("Failed to send message. Try again later.");
-          console.error(error.text);
-        }
-      );
-  };
-
   return (
     <section className="py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16 px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-14 items-start">
-        {/* LEFT — CONTACT INFO */}
         <div className="space-y-4 sm:space-y-5">
           <h3 className="text-lg sm:text-xl font-semibold tracking-tight">
             Get in touch
@@ -64,21 +31,21 @@ const Contact = () => {
         </div>
 
         <form
-          ref={formRef}
-          onSubmit={handleSubmit}
+          action="https://formspree.io/f/mzdznood"
+          method="POST"
           className="space-y-4 sm:space-y-5"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 xs:gap-4 sm:gap-5">
             <input
               type="text"
-              name="user_name"
+              name="name"
               placeholder="Name"
               className="border border-gray-300 p-2.5 xs:p-3 sm:p-3.5 focus:outline-none focus:border-black transition-colors text-xs xs:text-sm sm:text-base"
               required
             />
             <input
               type="email"
-              name="user_email"
+              name="email"
               placeholder="Email"
               className="border border-gray-300 p-2.5 xs:p-3 sm:p-3.5 focus:outline-none focus:border-black transition-colors text-xs xs:text-sm sm:text-base"
               required
@@ -96,20 +63,9 @@ const Contact = () => {
           <button
             type="submit"
             className="w-full bg-black text-white py-2.5 xs:py-3 sm:py-3.5 font-medium hover:bg-gray-900 transition-colors text-xs xs:text-sm sm:text-base tracking-wide"
-            disabled={loading}
           >
-            {loading ? "Sending..." : "Send Message"}
+            Send Message
           </button>
-
-          {success && (
-            <p
-              className={`text-center text-[11px] sm:text-xs ${
-                success.includes("success") ? "text-green-500" : "text-red-500"
-              }`}
-            >
-              {success}
-            </p>
-          )}
 
           <p className="text-center text-[11px] sm:text-xs text-gray-500">
             I usually reply within 24 hours.
