@@ -10,6 +10,7 @@ const Projects = () => {
           title={project.title}
           desc={project.desc}
           slug={project.slug}
+          url={project.url}
         />
       ))}
     </div>

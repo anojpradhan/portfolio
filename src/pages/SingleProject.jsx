@@ -29,6 +29,23 @@ const SingleProject = () => {
             ))}
           </div>
 
+          {/* VIEW PROJECT BUTTON */}
+          {project.url && (
+            <div className="mt-6">
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-red-600 hover:underline underline-offset-4 transition-all"
+              >
+                View Project
+                <span className="transform transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </a>
+            </div>
+          )}
+
           {/* MOBILE SKILLS */}
           <div className="block lg:hidden mt-12">
             <h3 className="text-lg font-semibold mb-4">Skills Used</h3>
@@ -55,6 +72,7 @@ const SingleProject = () => {
                   title={project.title}
                   desc={project.desc}
                   slug={project.slug}
+                  url={project.url}
                 />
               ))}
             </div>

@@ -4,7 +4,7 @@ export const projects = [
     type: "Inventory & Logistics Management System",
     desc: "A complete inventory and logistics management system designed to track products, manage stock levels, and streamline warehouse operations efficiently.",
     longdesc:
-      "LogiTrek is a full-scale inventory and logistics management system built to solve real-world business problems related to stock tracking and warehouse operations. The system allows organizations to manage products, monitor stock movements, and maintain accurate inventory records across multiple locations.\n\nThe backend was developed using Laravel with a strong focus on clean architecture, modular design, and scalable database relationships. Inertia.js was used to bridge the backend with a React-based frontend, providing a smooth and modern user experience without unnecessary API complexity.\n\nRole-based authentication was implemented to ensure secure access control for administrators and staff. Performance optimization, validation, and maintainable coding practices were key priorities throughout the development lifecycle, making the system suitable for production-level use.",
+      "LogiTrek is a full-scale inventory and logistics management system built as a practice to solve real-world business problems related to stock tracking and warehouse operations. The system allows organizations to manage products, monitor stock movements, and maintain accurate inventory records across multiple locations.\n\nThe backend was developed using Laravel with a strong focus on clean architecture, modular design, and scalable database relationships. Inertia.js was used to bridge the backend with a React-based frontend, providing a smooth and modern user experience without unnecessary API complexity.\n\nRole-based authentication was implemented to ensure secure access control for administrators and staff. Performance optimization, validation, and maintainable coding practices were key priorities throughout the development lifecycle, making the system suitable for production-level use.",
     skills: [
       "Laravel",
       "React",
@@ -16,7 +16,7 @@ export const projects = [
       "System Architecture",
     ],
     slug: "logitrek",
-    url: "",
+    url: "https://github.com/anojpradhan/IMS",
   },
   {
     title: "Himalayan Sofa",
@@ -34,7 +34,7 @@ export const projects = [
       "Database Design",
     ],
     slug: "himalayan-sofa",
-    url: "",
+    url: "https://www.himalayansofa.com",
   },
   {
     title: "Video Calling Application",
@@ -50,7 +50,25 @@ export const projects = [
       "Peer-to-Peer Networking",
     ],
     slug: "video-call-app",
-    url: "",
+    url: "https://github.com/anojpradhan/video_call",
+  },
+  {
+    title: "Product Management System",
+    type: "Stock Management",
+    desc: "It is a product management system that I am working on as a practice , it is simple product management system with proper Jwt Authentication and product and sales management",
+    longdesc:
+      "This Product Management System is a full-stack web application designed for managing products, sales, and inventory efficiently. It serves as a practice project with a strong focus on implementing real-world features like JWT-based authentication, role-based access control, and proper database relationships.\n\nThe backend is built using NestJS with Prisma ORM and PostgreSQL, ensuring a scalable and maintainable architecture. The system supports product creation, updates, deletion, and sales tracking while maintaining secure user authentication and authorization flows. Validation, error handling, and optimized database queries were implemented to ensure reliability and performance.\n\nOn the frontend, React is used to build a responsive and interactive interface. TanStack Query is employed for efficient data fetching and state management, while Ant Design components provide a consistent and professional look and feel. Users can view product lists, manage inventory levels, and track sales in real-time.\n\nThis project emphasizes best coding practices, modular design, and maintainability, making it a solid foundation for expanding into more complex inventory or stock management solutions in the future.",
+    skills: [
+      "Nest",
+      "Prisma ORM",
+      "React",
+      "Postgres",
+      "TanStack",
+      "AntDesign",
+      "Stock Management",
+    ],
+    slug: "product-management",
+    url: "https://github.com/anojpradhan/Product-Management",
   },
   {
     title: "Construction Company Website",
@@ -67,6 +85,5 @@ export const projects = [
       "Content Management",
     ],
     slug: "construction-site",
-    url: "",
   },
 ];
