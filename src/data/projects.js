@@ -69,7 +69,7 @@ export const projects = [
       "Ant Design",
       "Node.js",
     ],
-    slug: "video-call-app",
+    slug: "project-management",
     url: "https://pms-frontend-neon.vercel.app/",
   },
   {
