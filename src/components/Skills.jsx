@@ -1,12 +1,29 @@
 const skills = [
-  "Git",
+  // Data Science & AI/ML
+  "Python",
+  "NumPy",
+  "Pandas",
+  "Matplotlib",
+  "Seaborn",
+  "Scikit-learn",
+  "Statistics",
+  "Machine Learning",
+  "Data Analysis",
+  "EDA",
+
+  // Web Development
   "JavaScript",
-  "tailwindcss",
-  "NestJS",
-  "MySQL",
-  "Laravel",
   "React",
+  "NestJS",
   "Express",
+  "Laravel",
+  "Tailwind CSS",
+
+  // Database & Tools
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Git",
 ];
 
 const Skills = () => {

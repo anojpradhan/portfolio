@@ -4,36 +4,46 @@ import { Github, Linkedin, Facebook, Instagram } from "lucide-react";
 const Hero = () => {
   return (
     <section className="max-w-7xl mx-auto px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8 py-6 xs:py-8 sm:py-10 md:py-12 lg:py-16">
+      {" "}
       <div className="grid md:grid-cols-2 gap-8 xs:gap-10 sm:gap-12 md:gap-14 items-center">
+        {" "}
         <div className="order-2 md:order-1 text-center md:text-left">
+          {" "}
           <div className="space-y-1 xs:space-y-2 sm:space-y-3">
+            {" "}
             <h1 className="font-bold tracking-tight leading-tight text-[clamp(1.5rem,4vw,2rem)] xs:text-[clamp(1.75rem,5vw,2.5rem)] sm:text-[clamp(2rem,5vw,3rem)] md:text-[clamp(2.25rem,5vw,3.75rem)]">
-              Hello, I'm
-            </h1>
+              {" "}
+              Hello, I'm{" "}
+            </h1>{" "}
             <h2 className="font-bold tracking-tight leading-tight text-[clamp(1.75rem,5vw,2.25rem)] xs:text-[clamp(2rem,6vw,2.75rem)] sm:text-[clamp(2.25rem,6vw,3.25rem)] md:text-[clamp(2.5rem,6vw,3.75rem)]">
+              {" "}
               <span className="relative inline-block">
-                Anoj Pradhan
-                <span className="absolute left-0 -bottom-0.5 xs:-bottom-1 sm:-bottom-1.5 md:-bottom-2 w-full h-px xs:h-0.5 bg-black" />
-              </span>
-            </h2>
-          </div>
-
+                {" "}
+                Anoj Pradhan{" "}
+                <span className="absolute left-0 -bottom-0.5 xs:-bottom-1 sm:-bottom-1.5 md:-bottom-2 w-full h-px xs:h-0.5 bg-black" />{" "}
+              </span>{" "}
+            </h2>{" "}
+          </div>{" "}
           <div className="mt-3 xs:mt-4 sm:mt-5 md:mt-6">
+            {" "}
             <h3 className="font-medium text-[clamp(1.1rem,3vw,1.3rem)] xs:text-[clamp(1.2rem,3.5vw,1.5rem)] sm:text-[clamp(1.3rem,4vw,1.75rem)]">
-              Web Developer
-            </h3>
-            <p className="mt-0.5 xs:mt-1 text-xs xs:text-sm sm:text-base text-gray-700">
-              Based in <span className="font-semibold">Nepal</span>
-            </p>
-          </div>
-
+              {" "}
+              Data Science & ML Enthusiast{" "}
+            </h3>{" "}
+            <p className="mt-1 xs:mt-1.5 text-xs xs:text-sm sm:text-base text-gray-700">
+              {" "}
+              Freelance{" "}
+              <span className="font-semibold">Full Stack Developer</span> ·
+              Based in <span className="font-semibold">Nepal</span>{" "}
+            </p>{" "}
+          </div>{" "}
           <p className="mt-4 xs:mt-5 sm:mt-6 text-xs xs:text-sm sm:text-base text-gray-600 leading-relaxed max-w-md mx-auto md:mx-0">
-            I craft modern, scalable web applications by combining clean
-            frontend design with robust backend architecture. My work focuses on
-            performance, security, and real-world usability building systems
-            that are easy to scale and maintain.
+            {" "}
+            I am building my career in Data Science and Machine Learning,
+            working with Python, data analysis, visualization, and machine
+            learning. Alongside this, I work as a freelance full stack
+            developer, building scalable and practical web applications.{" "}
           </p>
-
           <div className="flex md:hidden justify-center gap-2 xs:gap-3 sm:gap-4 mt-5 xs:mt-6 sm:mt-7">
             {[
               {
@@ -68,7 +78,6 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
           <div className="relative flex justify-center w-full">
             {/* desktop divider */}

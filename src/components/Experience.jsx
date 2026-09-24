@@ -1,16 +1,17 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Trainee – Full Stack Web Development",
-      duration: "Oct 2024 – Jan 2025",
-      company: "CloveIt Pvt. Ltd.",
-      desc: "Trained in full stack web development with a strong focus on NestJS, React, and Tailwind CSS. Learned how to design modern, scalable web applications with proper database integration, clean architecture, and best development practices.",
+      title: "Data Science & AI/ML Trainee",
+      duration: "Apr 2026- Jul 2026",
+      company: "Dlytica Inc.",
+      desc: "Completed intensive training in data science, statistics, and AI/ML fundamentals. Worked with Python, data preprocessing, exploratory data analysis, data visualization, SQL, and foundational machine learning algorithms, while gaining exposure to deep learning and RAG concepts.",
     },
+
     {
-      title: "Trainer – Web Development Bootcamp",
-      duration: "Feb 2025 – Mar 2025",
-      company: "Birat Multiple College",
-      desc: "Conducted web development bootcamp sessions covering HTML, CSS, and JavaScript fundamentals. Helped students understand core programming concepts, website structure, and real-world web development workflows through hands-on examples.",
+      title: "Full Stack Web Developer",
+      duration: "Oct 2025 – Feb 2026",
+      company: "EEE Innovation Pvt. Ltd.",
+      desc: "Actively contributing as a core team member in designing and developing full-stack web applications. Involved in application architecture planning, database design, feature development, and effective team coordination.",
     },
     {
       title: "Web Developer Intern",
@@ -19,10 +20,16 @@ const Experience = () => {
       desc: "Worked on real-world web applications using Laravel and Tailwind CSS. Gained experience in building e-commerce features, following proper architectural patterns, and collaborating within a development team.",
     },
     {
-      title: "Full Stack Web Developer",
-      duration: "Oct 2025 – Present",
-      company: "EEE Innovation Pvt. Ltd.",
-      desc: "Actively contributing as a core team member in designing and developing full-stack web applications. Involved in application architecture planning, database design, feature development, and effective team coordination.",
+      title: "Trainer – Web Development Bootcamp",
+      duration: "Feb 2025 – Mar 2025",
+      company: "Birat Multiple College",
+      desc: "Conducted web development bootcamp sessions covering HTML, CSS, and JavaScript fundamentals. Helped students understand core programming concepts, website structure, and real-world web development workflows through hands-on examples.",
+    },
+    {
+      title: "Trainee – Full Stack Web Development",
+      duration: "Oct 2024 – Jan 2025",
+      company: "CloveIt Pvt. Ltd.",
+      desc: "Trained in full stack web development with a strong focus on NestJS, React, and Tailwind CSS. Learned how to design modern, scalable web applications with proper database integration, clean architecture, and best development practices.",
     },
   ];
 

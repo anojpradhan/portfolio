@@ -1,23 +1,98 @@
 export const projects = [
   {
-    title: "LogiTrek",
-    type: "Inventory & Logistics Management System",
-    desc: "A complete inventory and logistics management system designed to track products, manage stock levels, and streamline warehouse operations efficiently.",
+    title: "Ratnapark AQI Forecasting",
+    type: "Air Quality Forecasting & Machine Learning",
+    desc: "A machine learning forecasting system that uses recent air-quality observations from the government of Nepal to forecast PM2.5 and PM10 for the Ratnapark monitoring station.",
     longdesc:
-      "LogiTrek is a full-scale inventory and logistics management system built as a practice to solve real-world business problems related to stock tracking and warehouse operations. The system allows organizations to manage products, monitor stock movements, and maintain accurate inventory records across multiple locations.\n\nThe backend was developed using Laravel with a strong focus on clean architecture, modular design, and scalable database relationships. Inertia.js was used to bridge the backend with a React-based frontend, providing a smooth and modern user experience without unnecessary API complexity.\n\nRole-based authentication was implemented to ensure secure access control for administrators and staff. Performance optimization, validation, and maintainable coding practices were key priorities throughout the development lifecycle, making the system suitable for production-level use.",
+      "Ratnapark AQI Forecasting is a data science and machine learning project focused on short-term air-quality forecasting for the Ratnapark monitoring station in Kathmandu.\n\nThe project uses air-quality observations collected from the Government of Nepal's pollution monitoring system. Recent 15-day observations were used as the forecasting window, with the objective of predicting pollutant concentrations for the following day.\n\nThe project involved data collection, preprocessing, exploratory data analysis, feature engineering, model experimentation, and evaluation using MAE, RMSE, and R². Multiple machine learning approaches(Ridge , Extra trees, Linear Regression, Gradient Boosting, Random Forest) were compared separately for different pollutants rather than assuming that a single model would perform best for every target.\n\nFor PM2.5, Exponentially Weighted Moving Average features combined with Linear Regression were used for forecasting. For PM10, Extra Trees Regression was selected after comparing candidate models. The resulting pollutant predictions were then used to calculate the corresponding AQI, category, and dominant pollutant.",
+    skills: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Scikit-learn",
+      "Time Series",
+      "Feature Engineering",
+      "EDA",
+      "Joblib",
+      "Model Comparison",
+      "MAE",
+      "RMSE",
+      "R²",
+    ],
+    slug: "ratnapark-aqi-forecasting",
+    url: "https://github.com/anojpradhan/kathmandu_aqi_predictor",
+  },
+
+  {
+    title: "Mobile Price Classification",
+    type: "Machine Learning Classification",
+    desc: "A machine learning classification project that predicts mobile phone price categories using hardware specifications from a Kaggle dataset.",
+    longdesc:
+      "Mobile Price Classification is a supervised machine learning project built using a Kaggle dataset containing mobile phone specifications and their corresponding price categories.\n\nThe project involved data exploration, preprocessing, statistical analysis, feature analysis, visualization, and model evaluation. Multiple classification algorithms were explored, including Logistic Regression, Support Vector Machine, Decision Tree, Random Forest, and K-Nearest Neighbors.\n\nFeature relationships and their influence on the target variable were analyzed using correlation analysis, statistical testing, and model-based feature importance. Different preprocessing approaches were also evaluated, including feature scaling for algorithms that require normalized input.\n\nAfter comparing the models, Logistic Regression was selected for the final implementation. The final model was trained on the complete training dataset and saved together with the StandardScaler using Joblib, allowing new mobile specifications to be entered and classified into one of four price categories.",
+    skills: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "EDA",
+      "Feature Analysis",
+      "Classification",
+      "Model Evaluation",
+      "Joblib",
+      "Kaggle Dataset",
+    ],
+    slug: "mobile-price-classification",
+    url: "https://github.com/anojpradhan/mobile_price_detection",
+  },
+
+  {
+    title: "Hand Sign Language Learning App",
+    type: "Computer Vision & MERN Application",
+    desc: "A hand sign language learning and practice application that introduces finger spelling using browser-based machine learning and interactive exercises.",
+    longdesc:
+      "This project is a web-based hand sign language learning and practice application designed to help users learn and practice hand signs through an interactive interface.\n\nA major focus of the project was implementing finger spelling in the browser using pre-trained machine learning capabilities provided through ml5.js and p5.js rather than developing and training a machine learning model from scratch.\n\nThe application provides users with a learning environment where they can explore hand signs and practice their recognition through real-time interaction with the camera. The project combines browser-based machine learning with a full-stack MERN architecture to create an accessible and interactive learning experience.\n\nThe project was developed as an exploration of applying computer vision and machine learning concepts to a practical educational application, while also demonstrating how pre-trained models can be integrated into modern web applications.",
+    skills: [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "ml5.js",
+      "p5.js",
+      "Computer Vision",
+      "Machine Learning",
+    ],
+    slug: "hand-sign-language",
+    url: "https://hand-sign-language-app.vercel.app/",
+  },
+
+  {
+    title: "Seoul City Online Service",
+    type: "Document Management & Online Service Platform",
+    desc: "A full-stack document management platform that allows users to submit documents online while administrators manage submissions, documents, and workflows through a secure admin system.",
+    longdesc:
+      "Seoul City Online Service is a full-stack web application developed to digitize document submission and management workflows for a service organization. The platform allows users to register, submit required documents, and manage their application-related information through an online system.\n\nThe administrative side provides authorized staff with tools to review and manage user submissions and documents across different workflows. Role-based authentication was implemented to separate permissions between administrators, workers, and other system users.\n\nThe system also includes OTP-based verification for user authentication and secure account workflows. Document upload and management functionality was designed to support multiple document types while maintaining structured relationships between users, applications, and submitted files.\n\nThe application was built using Laravel with Inertia.js and React, combining Laravel's backend capabilities with a modern React-based frontend. MySQL was used for persistent data storage, while the application architecture emphasizes validation, authorization, maintainability, and scalable database relationships.",
     skills: [
       "Laravel",
       "React",
       "Inertia.js",
-      "Tailwind CSS",
       "MySQL",
-      "REST APIs",
+      "Tailwind CSS",
       "Role Based Authentication",
+      "OTP Authentication",
+      "Document Management",
+      "File Upload",
+      "Database Design",
+      "Authorization",
       "System Architecture",
     ],
-    slug: "logitrek",
-    url: "https://github.com/anojpradhan/IMS",
+    slug: "seoul-city-online-service",
+    url: "https://seoulcityonlineservice.com",
   },
+
   {
     title: "Himalayan Sofa",
     type: "E-commerce Web Application",
@@ -37,27 +112,11 @@ export const projects = [
     url: "https://www.himalayansofa.com",
   },
   {
-    title: "Video Calling Application",
-    type: "Real-time Communication App",
-    desc: "A real-time video conferencing application similar to Zoom, enabling users to join meetings using a shared meeting ID.",
-    longdesc:
-      "This video calling application is a real-time communication platform designed to support virtual meetings and collaboration. Users can create or join meetings using a shared meeting ID and communicate through live audio and video streams.\n\nThe application uses WebRTC for peer-to-peer media streaming, Socket.IO for real-time signaling, and React for building a responsive and interactive user interface. Handling connection states, media permissions, and real-time events was a key challenge addressed during development.\n\nThe project emphasizes performance, reliability, and smooth user experience, making it suitable for modern communication needs.",
-    skills: [
-      "React",
-      "WebRTC",
-      "Socket.IO",
-      "Real-time Communication",
-      "Peer-to-Peer Networking",
-    ],
-    slug: "video-call-app",
-    url: "https://github.com/anojpradhan/video_call",
-  },
-  {
     title: "Product Management System",
     type: "Product Management with Redis Optimization",
-    desc: "A full-stack product management system built for learning modern web development, featuring JWT authentication, product/sales management, and Redis caching implementation that improved performance by 30x.",
+    desc: "A full-stack product management system featuring JWT authentication, product and sales management, and Redis caching that significantly improved dashboard response time.",
     longdesc:
-      "This Product Management System is a full-stack web application designed for managing products and sales efficiently. It serves as a practice project with a strong focus on implementing real-world features like JWT-based authentication, proper database relationships, and performance optimization through Redis caching.\n\nThe backend is built using NestJS with Prisma ORM and PostgreSQL, ensuring a scalable and maintainable architecture. A key highlight is the Redis integration for caching dashboard data, which reduced API response times from 20.48 seconds to 0.695 seconds (30x improvement) by implementing a smart cache-first strategy with 60-second TTL expiration.\n\nThe system supports product creation, updates, deletion, and sales tracking while maintaining secure user authentication and authorization flows. Redis caching was specifically implemented for the dashboard endpoint that aggregates data from multiple tables, demonstrating practical performance optimization techniques.\n\nOn the frontend, React is used to build a responsive and interactive interface. TanStack Query is employed for efficient data fetching and state management, while Ant Design components provide a consistent and professional look and feel. Users can view product lists, manage inventory levels, and track sales in real-time.\n\nThis project emphasizes best coding practices, modular design, maintainability, and performance optimization through intelligent caching strategies, making it a solid foundation for expanding into more complex inventory management solutions.",
+      "This Product Management System is a full-stack web application designed for managing products and sales efficiently. It serves as a practice project with a strong focus on implementing real-world features such as JWT-based authentication, database relationships, and performance optimization through Redis caching.\n\nThe backend is built using NestJS with Prisma ORM and PostgreSQL, providing a scalable and maintainable architecture. Redis was integrated to cache dashboard data and reduce the response time of an endpoint that aggregates information from multiple database tables.\n\nThe system supports product creation, updates, deletion, and sales tracking while maintaining secure authentication and authorization flows. On the frontend, React and TanStack Query are used for data fetching and state management.",
     skills: [
       "NestJS",
       "React",
@@ -71,21 +130,5 @@ export const projects = [
     ],
     slug: "project-management",
     url: "https://pms-frontend-neon.vercel.app/",
-  },
-  {
-    title: "Construction Company Website",
-    type: "Corporate Website & CMS",
-    desc: "A corporate website showcasing company information, business verticals, projects, and blogs with a custom admin panel.",
-    longdesc:
-      "This construction company website was developed as a full-stack web application to present company details, services, completed projects, and blog content professionally. The goal was to provide both a public-facing website and a content management system for administrators.\n\nLaravel was used to build the backend and admin panel, enabling authorized users to manage website content dynamically. React components were integrated for interactive sections, while Tailwind CSS ensured a clean and responsive design.\n\nThe project follows proper architectural patterns and emphasizes reusability, performance, and ease of content management.",
-    skills: [
-      "Laravel",
-      "React",
-      "Tailwind CSS",
-      "Admin Panel",
-      "CMS Architecture",
-      "Content Management",
-    ],
-    slug: "construction-site",
   },
 ];
